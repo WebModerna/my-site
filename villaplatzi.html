@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Villa WebModerna</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<meta name="description" content="Video juego desarrollado en javascript como ejercicio de programación."/>
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- Open Graff para féisbuc -->
+	<meta property="og:url" content="http://www.webmoderna.com.ar/my-site/villaplatzi.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Video juego llamado Villa WebModerna"/>	
+	<meta property="og:description" content="Video juego desarrollado en javascript como ejercicios de programación."/>
+	<meta property="og:image" content="http://www.webmoderna.com.ar/my-site//img/screenshot.png" />
+
+	<meta name="author" content="WebModerna | El futuro de la web" />
+</head>
+<body>
+	<header>
+		<div id="titulo">
+			<strong>Villa WebModerna</strong>
+			<br />
+			<small>Llevá el pollito sano y salvo al gallinero (esquina inferior derecha) sin que lo maten las vacas ni los cerdos.</small>
+		</div>
+	</header>
+	<section>
+		<div id="modal">
+			<strong id="condicion">
+			</strong>
+		</div>
+		<article>
+			<canvas width="320" height="400" id="dibujito"></canvas>
+		</article>
+		<div id="joystick">
+			<a href="#" class="tecla" id="noroeste"></a>
+			<a href="#" class="tecla" id="norte"></a>
+			<a href="#" class="tecla" id="noreste"></a>
+			<a href="#" class="tecla" id="oeste"></a>
+			<a href="#" class="tecla" id="centro"></a>
+			<a href="#" class="tecla" id="este"></a>
+			<a href="#" class="tecla" id="suroeste"></a>
+			<a href="#" class="tecla" id="sur"></a>
+			<a href="#" class="tecla" id="sureste"></a>
+		</div>
+	</section>
+	<footer>
+		<span id="resultado"> </span>
+		<span id="puntos"> </span>
+	</footer>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/villaplatzi2.js"></script>
+</body>
+</html>

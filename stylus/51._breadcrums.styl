@@ -1,0 +1,47 @@
+// Las miguitas de pan
+.breadcrums
+	color plateado
+	font-family fuente_heading_bold_italic
+	font-size 90%
+	font-style italic
+	text-align left
+
+	&__list
+		border-bottom 1px dashed verde_azulado
+		border-top 1px dashed verde_azulado
+		padding 9px $em
+		margin 0
+
+		&__item
+			display inline-block
+			padding 0
+			font-style italic
+
+			a
+				display inline-block
+				opacity 0.5
+				font-style italic
+				&:hover
+				&:focus
+					opacity 1
+
+			&:after
+				content "»"
+				display inline-block
+				margin 0 0.5em
+				
+		// Eliminando los extremos
+		.first-child
+		.last-child
+			&:after
+				display none
+
+@media all and (min-width: 900px)
+	.breadcrums
+		padding-right $em
+
+// Para eliminar el espacio hacia la izquierda
+@media all and (min-width: 1230px)
+	.breadcrums
+		&__list
+			padding-left 0

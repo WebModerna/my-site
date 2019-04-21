@@ -1,0 +1,36 @@
+// Estructura principal del web en su cuerpo central
+*:after
+	clear both
+	content ""
+	display table
+
+a
+	color verde_azulado
+	transition all 0.1s ease-in-out
+	&:hover
+	&:focus
+		color rosa_suave
+
+html
+	color gris_medio
+	font-family fuente
+	font-size $em
+	text-align center
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+
+.wrapper
+	margin 0 auto
+	max-width 1200px
+
+// medias queries
+@media all and (min-width: 900px)
+	.content
+		box-sizing border-box
+		display inline-block
+		float left
+		margin 0
+		max-width 70%
+		overflow hidden
+		vertical-align top
+		width 100%

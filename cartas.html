@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes" />
+	<meta name="description" content="Obtiene la probabilidad de que la carta siguiente sea menor o igual a la que ya sacaste" />
+	<title>Juego de las Cartas</title>
+	<link rel="stylesheet" href="css/normalize.css" media="all" />
+	<link rel="stylesheet" href="css/style.css" media="all" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+<body>
+	<header>
+		<h1>Juego de las las Cartas</h1>
+	</header>
+
+	<main>
+		<section>
+			<form>
+				<div>
+					<label for="ingresador">¿Un mazo de cuántas cartas eliges?</label>
+					<input type="number" min="0" max="50" value="" id="ingresador" name="ingresador" />
+				</div>
+
+				<textarea class="mazo"></textarea>
+
+				<div class="botones">
+					<button class="comenzar" href="#">Comenzar</button>
+					<input type="reset" class="resetear" value="Borrar"/ >
+				</div>
+				
+				<div class="carta_elegida">
+					<label for="carta_ingresada">¿Qué carta te salió en tu mazo? (El comodín es el 13)</label>
+					<input type="number" min="0" max="13" value="" id="carta_ingresada" name="carta_ingresada" />
+				</div>
+
+				<div class="botones">
+					<a class="calculador" href="#">Calcular Probabilidad</a>
+				</div>
+
+				<div>
+					<h2 class="la_probabilidad"></h2>
+				</div>
+			</form>
+		</section>
+	</main>
+
+
+	<footer class="footer">
+		<div class="footer__copyright">
+			<p>&copy; WebModerna 2016 | Todos los derechos reservados</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/cartas.js"></script>
+</body>
+</html>

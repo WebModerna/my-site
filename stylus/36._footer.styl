@@ -1,0 +1,78 @@
+// El footer de la web
+.footer
+	background gris_fuerte
+	color gris_suave
+	font-family fuente_heading
+	padding 1em
+	
+	// Copyright
+	&__copyright
+		*
+			text-indent 0
+
+	// las REdes sociales
+	&__redes_sociales
+		&__list
+			margin 0
+			padding 0
+			&__item
+				display inline-block
+				a
+					display inline-block
+					font-size 1.5em
+					padding 0.25em
+					text-decoration none
+
+
+// Ir hacia arriba
+.gotop
+	display inline-block
+	bottom -5em
+	position fixed
+	right 0.5em
+	width 50px
+	height 40px
+	transition_comun()
+
+	a
+		background rosa_suave
+		display block
+		height 100%
+		opacity 0.5
+		padding 0 0 0.1em 0
+		text-decoration none
+		text-shadow_lindo()
+		width 100%
+
+		&:hover
+			opacity 1
+
+		&:before
+			content "↑"
+			color blanco
+			display block
+			font-family Arial
+			font-size 1.5em
+			left 0
+			height 100%
+			line-height 100%
+			position absolute
+			top 0
+			width 100%
+
+	&-mostrar
+		bottom 1em
+
+	&-ocultar
+		bottom -3em
+
+@media only screen and ( min-width: 740px )
+	.gotop
+		right 2em
+
+		&-mostrar
+			bottom 2em
+
+@media only print
+	.gotop
+		display none
