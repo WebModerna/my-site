@@ -11,12 +11,14 @@ class multiplesFunciones
 	reversar()
 	{
 		
+		console.log(texto);
 	}
 
 	// VALIDATE A PALINDROME
 	palindrome()
 	{
-
+		
+		console.log(texto);
 	}
 
 	// REVERSE AN INTEGER
@@ -28,12 +30,14 @@ class multiplesFunciones
 	// CAPITALIZE LETTERS
 	capitalizar()
 	{
-
+		
+		console.log(texto);
 	}
 
 	// MAX CHARACTER
 	maximizarCaracter()
 	{
-
+		
+		console.log(texto);
 	}
 }
