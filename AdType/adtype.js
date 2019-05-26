@@ -1,4 +1,8 @@
 // Making the AdType's test.
+var texto = "Este es mi Texto.";
+var numero = 92837923857;
+
+
 class multiplesFunciones
 {
 	constructor( texto, numero )
@@ -10,7 +14,8 @@ class multiplesFunciones
 	// REVERSE A STRING
 	reversar()
 	{
-		
+		texto = texto.reverse();
+		document.write(texto);	
 		console.log(texto);
 	}
 
@@ -41,3 +46,7 @@ class multiplesFunciones
 		console.log(texto);
 	}
 }
+
+var textillo = new multiplesFunciones(texto, numero);
+
+console.log(textillo);
